@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>pJomodoroS</title>
+
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400,700' rel='stylesheet' type='text/css'>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <style>
+        
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>pJomodoroS</h1>
+    
+    <form role="form">
+        <div class="form-group">
+            <div class="row">
+                <div class="col-sm-3">
+                    <label for="count-of-work-sessions">Count of work sessions</label>
+                    <input type="number" id="count-of-work-sessions" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label for="duration-of-work-session">Duration of work session [min]</label>
+                    <input type="number" id="duration-of-work-session" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label for="count-of-rest-session">Count of rest session</label>
+                    <input type="number" id="count-of-rest-session" class="form-control">
+                </div>
+                <div class="col-sm-3">
+                    <label for="duration-of-rest-session">Duration of rest session [min]</label>
+                    <input type="number" id="duration-of-rest-session" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <label for="long-break-after">Long break after</label>
+                    <input type="number" id="long-break-after" class="form-control">
+                </div>
+                <div class="col-sm-6">
+                    <label for="daily-target">Daily target</label>
+                    <input type="number" id="daily-target" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-default">START</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-default">PAUSE</button>
+                </div>
+                <div class="col-sm-4">
+                    <button type="button" class="btn btn-default">STOP</button>
+                </div>
+            </div>
+        </div>
+    </form>
+    <div id="counter" class="row">
+        <div class="col-sm-12">25:00</div>
+    </div>
+</div>
+
+<script>
+
+</script>
+</body>
+</html>
