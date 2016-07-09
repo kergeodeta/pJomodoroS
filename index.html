@@ -49,64 +49,71 @@
             </div>
         </div>
     </header>
-    <form role="form">
-        <div class="form-group">
-            <div id="entries-modal" class="modal fade" role="dialog">
-                <div class="modal-dialog modal-lg">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title">Settings</h1>
-                        </div>
-                        <div class="modal-body">
-                            <div class="row">
-                                <div class="col-sm-4 align-bottom">
-                                    <label for="duration-of-work-session">Duration of a work session  [min]</label>
-                                    <input type="number" id="duration-of-work-session" class="form-control" value="25" required>
+    <main>
+        <form role="form">
+            <div class="form-group">
+                <div id="entries-modal" class="modal fade" role="dialog">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title">Settings</h1>
+                            </div>
+                            <div class="modal-body">
+                                <div class="row">
+                                    <div class="col-sm-4 align-bottom">
+                                        <label for="duration-of-work-session">Duration of a work session  [min]</label>
+                                        <input type="number" id="duration-of-work-session" class="form-control" value="25" required>
+                                    </div>
+                                    <div class="col-sm-4 align-bottom">
+                                        <label for="count-of-rest-session">Short break duration [min]</label>
+                                        <input type="number" id="duration-of-short-break" class="form-control" value="5" required>
+                                    </div>
+                                    <div class="col-sm-4 align-bottom">
+                                        <label for="duration-of-rest-session">Long break duration [min]</label>
+                                        <input type="number" id="duration-of-long-break" class="form-control" value="15" required>
+                                    </div>
                                 </div>
-                                <div class="col-sm-4 align-bottom">
-                                    <label for="count-of-rest-session">Short break duration [min]</label>
-                                    <input type="number" id="duration-of-short-break" class="form-control" value="5" required>
-                                </div>
-                                <div class="col-sm-4 align-bottom">
-                                    <label for="duration-of-rest-session">Long break duration [min]</label>
-                                    <input type="number" id="duration-of-long-break" class="form-control" value="15" required>
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <label for="long-break-after">Long break after</label>
+                                        <input type="number" id="long-break-after" class="form-control" value="4" required>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="daily-target">Daily target</label>
+                                        <input type="number" id="daily-target" class="form-control" value="8" required>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <label for="long-break-after">Long break after</label>
-                                    <input type="number" id="long-break-after" class="form-control" value="4" required>
-                                </div>
-                                <div class="col-sm-6">
-                                    <label for="daily-target">Daily target</label>
-                                    <input type="number" id="daily-target" class="form-control" value="8" required>
-                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal" id="btnSettings">Close</button>
                             </div>
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal" id="btnSettings">Close</button>
                         </div>
                     </div>
                 </div>
+                <div class="row text-center">
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-default" id="btn-start">START</button>
+                    </div>
+                    <div class="col-sm-3">
+                        <button type="button" class="btn btn-default disabled" id="btn-pause">PAUSE</button>
+                    </div>
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-default disabled" id="btn-stop">STOP</button>
+                    </div>
+                    <div class="col-sm-1">
+                        <button type="button" id="btn-settings" class="btn btn-info btn-md" data-toggle="modal" data-target="#entries-modal">
+                            <span class="glyphicon glyphicon-cog"></span>
+                        </button>
+                    </div>
+                </div>
             </div>
-            <div class="row text-center">
-                <div class="col-sm-4">
-                    <button type="button" class="btn btn-default" id="btn-start">START</button>
-                </div>
-                <div class="col-sm-3">
-                    <button type="button" class="btn btn-default disabled" id="btn-pause">PAUSE</button>
-                </div>
-                <div class="col-sm-4">
-                    <button type="button" class="btn btn-default disabled" id="btn-stop">STOP</button>
-                </div>
-                <div class="col-sm-1">
-                    <button type="button" id="btn-settings" class="btn btn-info btn-md" data-toggle="modal" data-target="#entries-modal">
-                        <span class="glyphicon glyphicon-cog"></span>
-                    </button>
-                </div>
-            </div>
+        </form>
+    </main>
+    <footer class="row">
+        <div class="col-sm-12 text-center">
+            kergeodeta
         </div>
-    </form>
+    </footer>
 </div>
 
 </body>
