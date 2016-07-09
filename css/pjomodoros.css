@@ -29,3 +29,13 @@ footer {
 .modal-body {
     margin: 10px;
 }
+
+@media screen and (max-width: 780px) {
+    header .text-left {
+        text-align: center;
+    }
+
+    header .text-right {
+        text-align: center;
+    }
+}
