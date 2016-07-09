@@ -126,9 +126,12 @@ $(document).ready(function() {
                                 $.notify('Congratulations! You achieved your daily target!', 'success');
                             }
 
-                            btnStart.removeClass('disabled');
-                            btnPause.addClass('disabled');
-                            btnStop.addClass('disabled');
+                            
+                            btnClickable(btnStart, true);
+                            btnClickable(btnPause, false);
+                            btnClickable(btnStop, false);
+                            btnClickable(btnSettings, false);
+
                             $('#h-long-break-after').text('Long break after: ' + performedWorkSessionsBeforeLongBreak + '/' + longBreakAfter);
                             $('#h-daily-target').text('Daily target: ' + performedWorkSessions + '/' + dailyTartget);
 
@@ -150,9 +153,10 @@ $(document).ready(function() {
                             document.getElementById('notification').play();
                         }
 
-                        btnStart.removeClass('disabled');
-                        btnPause.addClass('disabled');
-                        btnStop.addClass('disabled');
+                        btnClickable(btnStart, true);
+                        btnClickable(btnPause, false);
+                        btnClickable(btnStop, false);
+                        btnClickable(btnSettings, false);
                     break;
                     case eSession.LBREAK:
                         nodeCounter.text(sec2min(durationOfLongBreak - elapsedTime));
@@ -169,9 +173,10 @@ $(document).ready(function() {
                             document.getElementById('notification').play();
                         }
 
-                        btnStart.removeClass('disabled');
-                        btnPause.addClass('disabled');
-                        btnStop.addClass('disabled');
+                        btnClickable(btnStart, true);
+                        btnClickable(btnPause, false);
+                        btnClickable(btnStop, false);
+                        btnClickable(btnSettings, false);
                     break;
                 }
 
