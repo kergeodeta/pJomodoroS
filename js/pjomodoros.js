@@ -20,7 +20,7 @@ $(document).ready(function() {
     var btnStart = $('#btn-start');
     var btnPause = $('#btn-pause'); 
     var btnStop = $('#btn-stop');
-    var btnSettings = $('#btn-settings');
+    var btnSettings = $('#btn-open-settings');
 
     nodeCounter.text(sec2min(durationOfWorkSession));
 
@@ -62,7 +62,7 @@ $(document).ready(function() {
         }
     });
 
-    btnSettings.click(function() {
+    $('#btn-settings').click(function() {
         durationOfWorkSession = $('#duration-of-work-session').val() * 60;
         durationOfShortBreak = $('#duration-of-short-break').val() * 60;
         durationOfLongBreak = $('#duration-of-long-break').val() * 60;
