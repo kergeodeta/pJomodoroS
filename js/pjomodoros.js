@@ -126,7 +126,6 @@ $(document).ready(function() {
                                 $.notify('Congratulations! You achieved your daily target!', 'success');
                             }
 
-                            
                             btnClickable(btnStart, true);
                             btnClickable(btnPause, false);
                             btnClickable(btnStop, false);
@@ -151,12 +150,12 @@ $(document).ready(function() {
                             nodeCounter.text(sec2min(durationOfWorkSession));
 
                             document.getElementById('notification').play();
-                        }
 
-                        btnClickable(btnStart, true);
-                        btnClickable(btnPause, false);
-                        btnClickable(btnStop, false);
-                        btnClickable(btnSettings, false);
+                            btnClickable(btnStart, true);
+                            btnClickable(btnPause, false);
+                            btnClickable(btnStop, false);
+                            btnClickable(btnSettings, false);
+                        }
                     break;
                     case eSession.LBREAK:
                         nodeCounter.text(sec2min(durationOfLongBreak - elapsedTime));
@@ -171,12 +170,12 @@ $(document).ready(function() {
                             nodeCounter.text(sec2min(durationOfWorkSession));
 
                             document.getElementById('notification').play();
-                        }
 
-                        btnClickable(btnStart, true);
-                        btnClickable(btnPause, false);
-                        btnClickable(btnStop, false);
-                        btnClickable(btnSettings, false);
+                            btnClickable(btnStart, true);
+                            btnClickable(btnPause, false);
+                            btnClickable(btnStop, false);
+                            btnClickable(btnSettings, false);
+                        }
                     break;
                 }
 
