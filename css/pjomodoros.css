@@ -36,6 +36,13 @@ footer {
 }
 
 @media screen and (max-width: 780px) {
+    body {
+        background-image: url('../resources/pjomodoros.png');
+        background-position: right bottom;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
     header .text-left {
         text-align: center;
     }
